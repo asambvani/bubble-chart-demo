@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BubbleChart from './components/bubblechart'
+let circleData = [20,30,40,50]
 
 class App extends Component {
   render() {
@@ -10,10 +11,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Awesome Bubble Chart Demo!</h2>
         </div>
-        <BubbleChart />
-        <p className="App-intro">
-          Testing
-        </p>
+        <BubbleChart data = {circleData}/>
       </div>
     );
   }
